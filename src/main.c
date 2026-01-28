@@ -1,14 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
+
+#include "../include/util.h"
 
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
-
-#define ERROR_EXIT(...) fprintf(stderr, __VA_ARGS__); exit(1)
-#define ERROR_RETURN(R, ...) fprintf(stderr, __VA_ARGS__); return R
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     (void)window;
