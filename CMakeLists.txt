@@ -15,7 +15,7 @@ endif()
 find_package(OpenGL REQUIRED)
 find_package(glfw3 3.3 REQUIRED)
 
-# GLAD library (we'll add this in Week 1)
+# GLAD library
 add_library(glad STATIC external/glad/src/glad.c)
 target_include_directories(glad PUBLIC external/glad/include)
 
